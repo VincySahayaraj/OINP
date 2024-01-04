@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: unset;
+}
+
+section,
+div,
+span,
+input,
+li,
+a,
+p {
+    outline: none;
+}
+
+input {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+.h1-titles {
+    font-size: 72px;
+    line-height: 73px;
+    font-weight: 500;
+
+    @media(max-width:991px) {
+        font-size: 45px;
+        line-height: 46px;
+    }
+
+    @media(max-width:768px) {
+        font-size: 40px;
+        line-height: 42px;
+    }
+
+    @media(max-width:768px) {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    @media(max-width:768px) {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+
+// vincy
+.h3-titles {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 146.5%;
+    color: #121A31;
+    text-align: center;
+    // margin-top: 30px;
+
+    @media(max-width:800px) {
+
+        font-size: 20px;
+        line-height: 120.5%;
+    }
+}
+
+@mixin content-cap{    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 200%;
+    color: $primery-color;
+    text-align: center;
+    display: block;
+    @media(max-width:800px) {
+
+        font-size: 15px;
+        line-height: 60%;
+        margin-top: 15px;
+    }
+}
+
+.h2-heading {
+    font-size: 15.75px;
+}
+
+.banner-images{
+    width: 100%;
+    height: 100%;
+    
+}
+
+//
+
+$primery-color: #000;
+$secondary-color: #fff;
+
+body {
+    font-family: 'Poppins';
+}
+
+.container {
+    margin: 0 auto;
+}
+
+@media (min-width: 200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        max-width: 768px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (min-width: 1260px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+select::-ms-expand {
+    display: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.inner-pages header {
+    background: $secondary-color !important;
+}
+
+@mixin button {
+    height: 50px;
+    width: 216px;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+    cursor: pointer;
+    border: none;
+}
